@@ -1,120 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="1" failed="1" skipped="1">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
-    <line>
-      <![CDATA[onStart]]>
-    </line>
-    <line>
-      <![CDATA[main2]]>
-    </line>
-    <line>
-      <![CDATA[onStart]]>
-    </line>
-    <line>
-      <![CDATA[main1]]>
-    </line>
   </reporter-output>
-  <suite started-at="2025-02-20T22:03:41 IST" name="Suite" finished-at="2025-02-20T22:03:59 IST" duration-ms="17915">
+  <suite started-at="2025-02-21T14:53:43 IST" name="Suite" finished-at="2025-02-21T14:54:46 IST" duration-ms="62986">
     <groups>
+      <group name="regrastion">
+        <method signature="Dws.amazon()[pri:0, instance:TestCaseExecution1.Dws@3eb25e1a]" name="amazon" class="TestCaseExecution1.Dws"/>
+        <method signature="Dws.dws()[pri:0, instance:TestCaseExecution1.Dws@3eb25e1a]" name="dws" class="TestCaseExecution1.Dws"/>
+        <method signature="Dws.flipkart()[pri:0, instance:TestCaseExecution1.Dws@3eb25e1a]" name="flipkart" class="TestCaseExecution1.Dws"/>
+      </group> <!-- regrastion -->
+      <group name="smoke">
+        <method signature="Csk.csk()[pri:0, instance:TestCaseExecution1.Csk@6f03482]" name="csk" class="TestCaseExecution1.Csk"/>
+      </group> <!-- smoke -->
     </groups>
-    <test started-at="2025-02-20T22:03:41 IST" name="Test" finished-at="2025-02-20T22:03:59 IST" duration-ms="17915">
-      <class name="extentReportMethod.UsingListeners">
-        <test-method is-config="true" signature="preCondition()[pri:0, instance:extentReportMethod.UsingListeners@70325e14]" started-at="2025-02-20T22:03:41 IST" name="preCondition" finished-at="2025-02-20T22:03:48 IST" duration-ms="7015" status="PASS">
+    <test started-at="2025-02-21T14:53:43 IST" name="Test" finished-at="2025-02-21T14:54:46 IST" duration-ms="62986">
+      <class name="TestCaseExecution1.Rcb">
+        <test-method signature="rcb()[pri:0, instance:TestCaseExecution1.Rcb@179ece50]" started-at="2025-02-21T14:54:27 IST" name="rcb" finished-at="2025-02-21T14:54:46 IST" duration-ms="19781" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- preCondition -->
-        <test-method is-config="true" signature="login()[pri:0, instance:extentReportMethod.UsingListeners@70325e14]" started-at="2025-02-20T22:03:48 IST" name="login" finished-at="2025-02-20T22:03:51 IST" duration-ms="2781" status="PASS">
+        </test-method> <!-- rcb -->
+      </class> <!-- TestCaseExecution1.Rcb -->
+      <class name="TestCaseExecution1.Dws">
+        <test-method signature="amazon()[pri:0, instance:TestCaseExecution1.Dws@3eb25e1a]" started-at="2025-02-21T14:53:43 IST" name="amazon" finished-at="2025-02-21T14:53:48 IST" duration-ms="4777" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="main2()[pri:0, instance:extentReportMethod.UsingListeners@70325e14]" started-at="2025-02-20T22:03:51 IST" name="main2" finished-at="2025-02-20T22:03:52 IST" duration-ms="1070" status="FAIL">
-          <exception class="org.testng.internal.thread.ThreadTimeoutException">
-            <message>
-              <![CDATA[Method extentReportMethod.UsingListeners.main2() didn't finish within the time-out 1000]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.internal.thread.ThreadTimeoutException: Method extentReportMethod.UsingListeners.main2() didn't finish within the time-out 1000
-at java.base/java.lang.Thread.sleepNanos0(Native Method)
-at java.base/java.lang.Thread.sleepNanos(Thread.java:496)
-at java.base/java.lang.Thread.sleep(Thread.java:527)
-at extentReportMethod.UsingListeners.main2(UsingListeners.java:17)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:47)
-at org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:76)
-at org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:11)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1575)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.internal.thread.ThreadTimeoutException -->
-          <reporter-output>
-            <line>
-              <![CDATA[main2]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- main2 -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:extentReportMethod.UsingListeners@70325e14]" started-at="2025-02-20T22:03:52 IST" name="logout" finished-at="2025-02-20T22:03:53 IST" duration-ms="962" status="PASS">
+        </test-method> <!-- amazon -->
+        <test-method signature="dws()[pri:0, instance:TestCaseExecution1.Dws@3eb25e1a]" started-at="2025-02-21T14:53:48 IST" name="dws" finished-at="2025-02-21T14:53:53 IST" duration-ms="4827" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method is-config="true" signature="login()[pri:0, instance:extentReportMethod.UsingListeners@70325e14]" started-at="2025-02-20T22:03:53 IST" name="login" finished-at="2025-02-20T22:03:55 IST" duration-ms="1854" status="PASS">
+        </test-method> <!-- dws -->
+        <test-method signature="flipkart()[pri:0, instance:TestCaseExecution1.Dws@3eb25e1a]" started-at="2025-02-21T14:53:53 IST" name="flipkart" finished-at="2025-02-21T14:53:59 IST" duration-ms="5478" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="main1()[pri:0, instance:extentReportMethod.UsingListeners@70325e14]" started-at="2025-02-20T22:03:55 IST" name="main1" finished-at="2025-02-20T22:03:55 IST" duration-ms="9" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[main1]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- main1 -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:extentReportMethod.UsingListeners@70325e14]" started-at="2025-02-20T22:03:55 IST" name="logout" finished-at="2025-02-20T22:03:56 IST" duration-ms="1006" status="PASS">
+        </test-method> <!-- flipkart -->
+      </class> <!-- TestCaseExecution1.Dws -->
+      <class name="TestCaseExecution1.Csk">
+        <test-method signature="csk()[pri:0, instance:TestCaseExecution1.Csk@6f03482]" started-at="2025-02-21T14:54:02 IST" name="csk" finished-at="2025-02-21T14:54:16 IST" duration-ms="13128" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method signature="main3()[pri:0, instance:extentReportMethod.UsingListeners@70325e14]" started-at="2025-02-20T22:03:56 IST" name="main3" finished-at="2025-02-20T22:03:56 IST" depends-on-methods="extentReportMethod.UsingListeners.main2" duration-ms="3" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method extentReportMethod.UsingListeners.main3() on instance extentReportMethod.UsingListeners@70325e14 depends on not successfully finished methods 
-[extentReportMethod.UsingListeners.main2() on instance extentReportMethod.UsingListeners@70325e14]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method extentReportMethod.UsingListeners.main3() on instance extentReportMethod.UsingListeners@70325e14 depends on not successfully finished methods 
-[extentReportMethod.UsingListeners.main2() on instance extentReportMethod.UsingListeners@70325e14]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        </test-method> <!-- csk -->
+      </class> <!-- TestCaseExecution1.Csk -->
+      <class name="TestCaseExecution2.Facebook">
+        <test-method signature="facebook()[pri:0, instance:TestCaseExecution2.Facebook@185a6e9]" started-at="2025-02-21T14:53:59 IST" name="facebook" finished-at="2025-02-21T14:54:02 IST" duration-ms="3879" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- main3 -->
-        <test-method is-config="true" signature="postCondition()[pri:0, instance:extentReportMethod.UsingListeners@70325e14]" started-at="2025-02-20T22:03:56 IST" name="postCondition" finished-at="2025-02-20T22:03:59 IST" duration-ms="2506" status="PASS">
+        </test-method> <!-- facebook -->
+      </class> <!-- TestCaseExecution2.Facebook -->
+      <class name="TestCaseExecution2.RoyalEnfield">
+        <test-method signature="royalEnfield()[pri:0, instance:TestCaseExecution2.RoyalEnfield@9d5509a]" started-at="2025-02-21T14:54:16 IST" name="royalEnfield" finished-at="2025-02-21T14:54:27 IST" duration-ms="11051" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- postCondition -->
-      </class> <!-- extentReportMethod.UsingListeners -->
+        </test-method> <!-- royalEnfield -->
+      </class> <!-- TestCaseExecution2.RoyalEnfield -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

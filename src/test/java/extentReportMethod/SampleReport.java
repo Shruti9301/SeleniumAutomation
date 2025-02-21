@@ -38,5 +38,5 @@ public class SampleReport {
 		//Use Flush
 		report.flush();
 	}
-
+	
 }
