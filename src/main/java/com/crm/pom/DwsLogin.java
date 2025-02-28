@@ -26,6 +26,25 @@ public class DwsLogin {
 	public WebElement forgot_password;
 	
 	@FindBy(xpath = "//input[@value='Log in']")
-	public WebElement login_in;
+	public WebElement login_button;
+	
+	public void loginLink() {
+		login_link.click();
+	}
+	public void userName(String email){
+		username.sendKeys(email);
+	}
+	public void password(String pass) {
+		password.sendKeys(pass);
+	}
+	public void rememberMe() {
+		rememberMe.click();
+	}
+	public void forgotPassword() {
+		forgot_password.click();
+	}
+	public void loginButton() {
+		login_button.click();
+	}
 
 }
